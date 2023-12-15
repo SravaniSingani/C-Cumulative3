@@ -1,0 +1,14 @@
+//general command:
+
+curl -H "Content-Type: application/json" -d "{\"TeacherFname\": \"Lily\", \"TeacherLname\": \"Aldrin\", \"EmpNumber\": \"T117\", \"Salary\": \"49.67\"}" http://localhost:64483/api/TeacherData/AddTeacher
+
+//json command:
+//Make sure to add the right path for the file
+
+//Adding a New Teacher
+
+curl -H "Content-Type: application/json" -d @newteacher.json http://localhost:64483/api/TeacherData/AddTeacher
+
+//Updating a Teacher
+
+curl -H "Content-Type: application/json" -d @updateTeacher.json "http://localhost:50497/api/TeacherData/UpdateTeacher/13"
